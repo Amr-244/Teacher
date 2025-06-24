@@ -1,0 +1,29 @@
+body {
+    font-family: 'Cairo', sans-serif;
+  }
+  
+  /* Animation بسيطة */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-out forwards;
+  }
+  
+  .zoom-in {
+    transform: scale(0.8);
+    animation: zoomIn 1s ease-out forwards;
+  }
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes zoomIn {
+    to {
+      transform: scale(1);
+    }
+  }
+  
